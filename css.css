@@ -1,78 +1,149 @@
-/*body {margin:0;}*/
-
-/* Universal box-sizing */
-* { box-sizing: border-box; }
-
-/* Set height of body and html to 100% */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
+/*global vars*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Style for tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
+body {
+    background: #f5f5f5;
 }
 
-/* Hover effect for tab links */
-.tablink:hover {
-  background-color: #777;
+nav {
+    width: 100%;
+    background: #1f3147;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
-/* Style for the tab content */
-.tabcontent {
-  color: whitesmoke;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
 }
 
-/* Tab-specific background colors */
-#Home { background-color: red; }
-#About { background-color: green; }
-#Contact-Me { background-color: blue; }
-
-/*.topnav {
-  overflow: hidden;
-  background-color: #22a;
+nav ul li a {
+    color: #dfe7f0;
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+nav ul li a.active,
+nav ul li a:hover {
+    background: rgba(255,255,255,0.15);
+}
+/*footer*/
+footer {
+    background: #1f3147;
+    color: #dfe7f0;
+    padding: 25px 0;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 14px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+footer .bottom-nav {
+    margin-top: 10px;
 }
 
-.topnav a.active {
-  background-color: #335;
-  color: white;
+footer a {
+    text-decoration: none;
+    color: #dfe7f0;
+    margin: 0 12px;
+}
+/* ---------- HOME PAGE ---------- */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 60px;
+    background: linear-gradient(135deg, #6a7ff5, #7c49c3);
+    color: white;
 }
 
-.topnav .icon {
-  display: none;
+.hero h1 {
+    font-size: 55px;
+    font-weight: 700;
 }
 
-.topnav-centered a {
-  float: inline-start;
-  position: relative;
-  top: auto;
-  left: 42.5%;
-}*/
+.hero p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 120px auto 50px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+/*sections*/
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.info-box div {
+    margin: 6px 0;
+}
+
+.social-buttons a {
+    padding: 6px 12px;
+    border: 1px solid #c7c7c7;
+    background: white;
+    margin-right: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/*contact form*/
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #6a7ff5, #7c49c3);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: 0.9;
+}
+
+.contact-info {
+    margin-top: 25px;
+    text-align: center;
+}

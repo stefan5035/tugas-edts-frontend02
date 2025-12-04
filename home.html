@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Home</title>
     <link rel="stylesheet" href="css.css">
-    <title>Tabs with Navbars</title>
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
 
-<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('About', this, 'green')">About</button>
-<button class="tablink" onclick="openPage('Contact-Me', this, 'blue')">Contact Me</button>
+    <section class="hero">
+        <h1>John Doe</h1>
+        <p>Web Developer & Designer</p>
+    </section>
 
-<div id="Home" class="tabcontent">
-  <h3>John Doe</h3>
-  <p>Web Developer & Designer</p>
-</div>
+    <footer>
+        © 2024 John Doe. All Rights Reserved.
+        <div class="bottom-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
 
-<div id="About" class="tabcontent">
-    <h2>Tentang Saya</h2>
-    <h4>Sosial Media</h4>
-    <button>Linkedin</button>
-    <button>GitHub</button>
-    <button>Twitter</button>
-    <button>Instagram</button>
-</div>
-
-<div id="Contact-Me" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
-</div>
-
-
-<script src="js.js"></script>
 </body>
 </html>

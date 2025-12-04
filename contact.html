@@ -1,17 +1,56 @@
 <!DOCTYPE html>
-<html lang="id">
-    <head>
-        <link rel="stylesheet" type="text/css" href="css.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css.css">
+</head>
 
-    </head>
-    <body>
-    <div class="topnav">
-        <div class="topnav-centered">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact Me</a>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-title" style="text-align: center;">Hubungi Saya</h2>
+        <p style="text-align:center; margin-bottom:25px;">Punya pertanyaan atau ingin bekerja sama? Silakan kirim pesan!</p>
+
+        <form id="contactForm">
+            <label>Nama *</label>
+            <input type="text" required>
+
+            <label>Email *</label>
+            <input type="email" required>
+
+            <label>Subjek *</label>
+            <input type="text" required>
+
+            <label>Pesan *</label>
+            <textarea rows="5" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Telepon:</strong> +62 812-3456-7890</p>
+            <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
         </div>
     </div>
 
+    <footer>
+        © 2024 John Doe. All Rights Reserved.
+        <div class="bottom-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
