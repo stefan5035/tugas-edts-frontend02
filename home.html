@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <title>Tabs with Navbars</title>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('About', this, 'green')">About</button>
+<button class="tablink" onclick="openPage('Contact-Me', this, 'blue')">Contact Me</button>
+
+<div id="Home" class="tabcontent">
+  <h3>John Doe</h3>
+  <p>Web Developer & Designer</p>
+</div>
+
+<div id="About" class="tabcontent">
+    <h2>Tentang Saya</h2>
+    <h4>Sosial Media</h4>
+    <button>Linkedin</button>
+    <button>GitHub</button>
+    <button>Twitter</button>
+    <button>Instagram</button>
+</div>
+
+<div id="Contact-Me" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+
+<script src="js.js"></script>
+</body>
+</html>
