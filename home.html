@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css.css">
 </head>
@@ -9,12 +10,24 @@
 <body>
     <nav>
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a class="active" href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
+        </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        <ul id="menu" class="mobile">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+        <div class="burger">
+        <div></div><div></div><div></div>
+        </div>
     </nav>
-
+    
     <section class="hero">
         <h1>Stefan LN Madethen</h1>
         <p>Web Developer & Designer</p>
@@ -28,6 +41,6 @@
             <a href="contact.html">Contact</a>
         </div>
     </footer>
-
+    <script src="js.js"></script>
 </body>
 </html>

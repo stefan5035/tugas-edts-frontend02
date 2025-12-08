@@ -1,4 +1,4 @@
-document.addEventListener("submit", e => {
-    e.preventDefault();
-    alert("Pesan berhasil dikirim!");
-});
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('active');
+}
