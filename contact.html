@@ -1,64 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css.css" />
 </head>
-
 <body>
     <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="contact.html">Contact Me</a></li>
-        </ul>
-        <div class="menu-icon" onclick="toggleMenu()">
-        &#9776;
-        <ul id="menu" class="mobile">
-        <div></div><div></div><div></div>
+        <div class="burger" id="burger-btn">
+            <div></div><div></div><div></div>
         </div>
-        <ul class="mobile">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+
+        <ul id="menu" class="center-nav">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Me</a></li>
         </ul>
-      </div>
     </nav>
-    <br><br><br>
-    <section class="content">
-    <div class="card">
-        <h2 style="text-align: center; color: black">Hubungi Saya</h2>
-        <p style="text-align:center; margin-bottom:25px;">Punya pertanyaan atau ingin bekerja sama? Silakan kirim pesan!</p>
 
-        <form id="contactForm">
-            <label>Nama</label>
-            <input type="text" required placeholder="Masukkan nama Anda">
+    <section class="content" style="padding-top: 100px;">
+        <div class="card">
+            <h2 style="text-align:center; color:rgb(28, 86, 172);">Hubungi Saya</h2>
+            <p style="text-align:center; margin-bottom:25px;">Punya pertanyaan atau ingin bekerja sama? Silakan kirim pesan!</p>
 
-            <label>Email</label>
-            <input type="email" required placeholder="Masukkan email Anda">
+            <form id="contactForm">
+                <label>Nama</label>
+                <input type="text" required placeholder="Masukkan nama Anda" />
 
-            <label>Subjek</label>
-            <input type="text" required placeholder="Masukkan subjek pesan">
+                <label>Email</label>
+                <input type="email" required placeholder="Masukkan email Anda" />
 
-            <label>Pesan</label>
-            <textarea rows="5" required placeholder="Tulis pesan Anda di sini..."></textarea>
+                <label>Subjek</label>
+                <input type="text" required placeholder="Masukkan subjek pesan" />
 
-            <button type="submit">Kirim Pesan</button>
-        </form>
-<div class="section"></div>
-        
-        <div class="contact-info">
-            <h3><strong>Informasi Kontak</strong></h3>
-            <p>Email: stefan.madethen@gmail.com</p>
-            <p>Telepon: +62 812-8851-2635</p>
-            <p>Lokasi: Jakarta, Indonesia</p>
+                <label>Pesan</label>
+                <textarea rows="5" required placeholder="Tulis pesan Anda di sini..."></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+
+            <div class="section"></div>
+
+            <div class="contact-info">
+                <h3><strong>Informasi Kontak</strong></h3>
+                <p>Email: stefan.madethen@gmail.com</p>
+                <p>Telepon: +62 812-8851-2635</p>
+                <p>Lokasi: Jakarta, Indonesia</p>
+            </div>
         </div>
-    </div>
     </section>
+
     <footer>
-       <p>© 2025 Stefan LN Madethen. All Rights Reserved.</p>
+        <p>© 2025 Stefan LN Madethen. All Rights Reserved.</p>
         <div class="footer-links">
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
@@ -66,6 +60,6 @@
         </div>
     </footer>
 
-<script src="js.js"></script>
+    <script src="js.js"></script>
 </body>
 </html>

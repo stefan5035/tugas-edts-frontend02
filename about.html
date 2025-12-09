@@ -1,97 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css.css" />
 </head>
-
 <body>
     <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a class="active" href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-       <div class="menu-icon" onclick="toggleMenu()">
-        &#9776;
-        <div class="burger">
-        <div></div><div></div><div></div>
+        <div class="burger" id="burger-btn">
+            <div></div><div></div><div></div>
         </div>
-        <ul id="menu" class="mobile">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+
+        <ul id="menu" class="center-nav">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Me</a></li>
         </ul>
-      </div>
     </nav>
-    
-    <br><br><br>
-    <section class="content">
-    <div class="card">
-        <h2>Tentang Saya</h2>
-        <div class="profile-grid">
-            <div class="profile-photo">Profile Photo</div>
-            <div>
-                <p><strong>Nama:&emsp;&emsp;</strong>Stefan LN Madethen</p>
-                <p><strong>Email:&emsp;&emsp;</strong> stefan.madethen@gmail.com</p>
-                <p><strong>Telepon: </strong> +62 812-8851-2635</p>
-                <p><strong>Lokasi:&emsp;</strong> Jakarta, Indonesia</p>
+
+    <section class="content" style="padding-top: 50px;">
+        <div class="card">
+            <h2 class="about-me">Tentang Saya</h2>
+            <div class="profile-grid">
+                <div class="profile-photo">Profile Photo</div>
+                <div>
+                    <p><strong>Nama:</strong> Stefan LN Madethen</p>
+                    <p><strong>Email:</strong> stefan.madethen@gmail.com</p>
+                    <p><strong>Telepon:</strong> +62 812-8851-2635</p>
+                    <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
+                </div>
+            </div>
+
+            <h3 class="socmed">Sosial Media</h3>
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/in/stefan-lakipadada-n-madethen">LinkedIn</a>
+                <a href="https://github.com/stefan5035/">GitHub</a>
+                <a href="https://twitter.com/stefan5035/">Twitter</a>
+                <a href="https://instagram.com/stefan_l_n_m/">Instagram</a>
             </div>
         </div>
 
-        <h3>Sosial Media</h3>
-        <div class="social-buttons">
-            <a href="https://www.linkedin.com/in/stefan-lakipadada-n-madethen">LinkedIn</a>
-            <a href="https://github.com/stefan5035/">GitHub</a>
-            <a href="https://twitter.com/stefan5035/">Twitter</a>
-            <a href="https://instagram.com/stefan_l_n_m/">Instagram</a>
+        <div class="card">
+            <h2 class="section-title">Pendidikan</h2>
+            <h4 class="job-title">S1 Teknik Informatika</h4>
+            <p>Universitas Multimedia Nusantara</p>
+            <p><i>2017 – 2024</i></p>
+            <p>IPK: 2.82 / 4.00</p>
+
+            <div class="section"></div>
+
+            <h4 class="job-title">SMA Cita Buana</h4>
+            <p>Jurusan IPA</p>
+            <p>2014 – 2016</p>
         </div>
-    </div>
 
-    <div class="card">
-        <h2 class="section-title">Pendidikan</h2>
-        <h4 class="job-title">S1 Teknik Informatika</h4>
-        <p>Universitas Multimedia Nusantara</p>
-        <p><i>2017 – 2024</i></p>
-        <p>IPK: 2.82 / 4.00</p>
-        <div class="section"></div>
-        <h4 class="job-title">SMA Cita Buana</h4>
-        <p>Jurusan IPA</p>
-        <p>2014 – 2016</p>
-    </div>
+        <div class="card">
+            <h2 class="section-title">Pengalaman Kerja</h2>
+            <h4 class="job-title">Frontend Engineering Intern</h4>
+            <p>PT. Elevenia Digital Teknologi Sukses</p>
+            <p><em>Desember 2025 – Januari 2026</em></p>
+            <ul>
+                <li>Mengerjakan tugas web development</li>
+            </ul>
 
-    <div class="card">
-        <h2 class="section-title">Pengalaman Kerja</h2>
+            <div class="section"></div>
 
-        <h4 class="job-title">Frontend Engineering Intern</h4>
-        <p>PT. Elevenia Digital Teknologi Sukses</p>
-        <p><em>Desember 2025 – Januari 2026</em></p>
-        <ul>
-            <li>Mengerjakan tugas web development</li>
-        </ul>
-        <div class="section"></div>
-        <h4 class="job-title">Frontliner</h4>
-        <p>Deltamas Komputer</p>
-        <p><em>Januari 2024 – Juni 2024</em></p>
-        <ul>
-            <li>Membantu customer dengan apa yang diperlukan</li>
-            <li>Membuat struk utk customer</li>
-            <li>Membersihkan etalase penjualan dan lingkungan sekitar</li>
-        </ul>
-    </div>
-</section>
+            <h4 class="job-title">Frontliner</h4>
+            <p>Deltamas Komputer</p>
+            <p><em>Januari 2024 – Juni 2024</em></p>
+            <ul>
+                <li>Membantu customer dengan apa yang diperlukan</li>
+                <li>Membuat struk untuk customer</li>
+                <li>Membersihkan area penjualan</li>
+            </ul>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2025 Stefan LN Madethen. All Rights Reserved.</p>
-        <div class="footer-links"><div class="footer-links">
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
-</footer>
+    <footer>
+        <p>© 2025 Stefan LN Madethen. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
     <script src="js.js"></script>
-
 </body>
 </html>
