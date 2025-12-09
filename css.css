@@ -10,16 +10,21 @@ body {
     color: #333;
 }
 
-/* nav */
+/* Hide checkbox */
+#burger-toggle {
+    display: none;
+}
+
+/* Default desktop nav */
 nav {
     background: #2c3e50;
-    padding: 20px 0 20px 20px;
+    padding: 30px 30px 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
     position: fixed;
     top: 0;
+    width: 100%;
     z-index: 10;
 }
 
@@ -39,15 +44,17 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255,255,255,0.15);
 }
 
 /* Burger button */
 .burger {
     display: none;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     cursor: pointer;
+    position: absolute;
+    right: 20px;
 }
 
 .burger div {
@@ -57,26 +64,39 @@ nav ul li a.active {
     border-radius: 2px;
 }
 
-/* Mobile menu */
+/*responsiveness*/
 @media (max-width: 768px) {
+    nav {
+        justify-content: flex-start;
+        width: 97.5%;
+        padding: 20px 0;
+    }
+
+    /*no menu? default*/
     nav ul {
         display: none;
         position: absolute;
-        top: 60px;
-        left: 0;
+        top: 50px;
         width: 100%;
-        flex-direction: column;
         background: #1e3347;
-        padding: 15px 0;
+        flex-direction: column;
+        padding: 10px 0 0 10px;
         text-align: center;
     }
 
-    nav ul.active {
+    /*show the menu when borgir checked*/
+    #burger-toggle:checked ~ ul {
         display: flex;
     }
 
+    /*mobile-borgir*/
     .burger {
         display: flex;
+    }
+
+    /*centering nav items*/
+    .center-nav {
+        margin: 0 auto;
     }
 }
 
@@ -230,7 +250,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px 0;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .footer-links a {

@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="css.css" />
 </head>
 <body>
-    <nav>
-        <div class="burger" id="burger-btn">
-            <div></div><div></div><div></div>
-        </div>
+<nav>
+    <!--checkbox controls menu-->
+    <input type="checkbox" id="burger-toggle">
 
-        <ul id="menu" class="center-nav">
-            <li><a href="home.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="contact.html" class="nav-link">Contact Me</a></li>
-        </ul>
-    </nav>
+    <!--borgir-->
+    <label for="burger-toggle" class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+
+    <!--menu (real)-->
+    <ul class="center-nav">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Me</a></li>
+    </ul>
+</nav>
 
     <section class="content" style="padding-top: 100px;">
         <div class="card">
