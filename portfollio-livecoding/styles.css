@@ -20,8 +20,7 @@ form label {
     font-weight: 200;
 }
 
-form input,
-form textarea {
+form input, form textarea {
     width: 98.75%;
     padding: 5px;
     border-radius: 2px;
@@ -39,4 +38,7 @@ form button {
     font-size: 16px;
     font-weight: 200;
     cursor: pointer;
+}
+.contact{
+   text-align: center; 
 }
