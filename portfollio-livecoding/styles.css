@@ -80,7 +80,6 @@ header{
 
 .foot-links a {
     color: darkgreen;
-    display: flex;
     gap: 40px;
     margin: 0 15px;
     text-decoration: none;
