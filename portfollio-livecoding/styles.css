@@ -14,3 +14,29 @@
 .about-job{
     color: darkcyan;
 }
+form label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 200;
+}
+
+form input,
+form textarea {
+    width: 99%;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid wheat;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+form button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: linear-gradient(135deg, #13258b, #3d0986);
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    cursor: pointer;
+}
