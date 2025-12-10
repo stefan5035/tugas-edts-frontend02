@@ -4,10 +4,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .card{
-    max-width: 1024px;
+    max-width: 768px;
     border: 2px solid black;
-    margin: 10px 0 10px 0;
-    padding: 0 5px 0 5px;
+    margin: 10px;
+    padding: 15px;
+    align-items: center;
 }
 .about-title{
     color: aqua;
@@ -23,7 +24,7 @@ form label {
 }
 
 form input, form textarea {
-    width: 98%;
+    width: 100%;
     padding: 5px;
     border-radius: 2px;
     border: 1px solid wheat;
@@ -111,4 +112,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.content {
+    width: 60%;
+    margin: 35px auto;
 }
