@@ -21,7 +21,7 @@ body {
     border-bottom: 3.5px solid lightblue;
 }
 .about-job{
-    color: darkcyan;
+    color: rgb(9, 114, 206);
 }
 form label {
     display: block;
@@ -139,4 +139,9 @@ h4{
 }
 h5{
     font-size:17px;
+}
+.dot-lines {
+    border-bottom: 1px dotted gray;
+    margin-bottom: 3px;
+    margin-top: 2px;
 }
