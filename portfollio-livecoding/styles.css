@@ -21,7 +21,7 @@ form label {
 }
 
 form input, form textarea {
-    width: 98.75%;
+    width: 98%;
     padding: 5px;
     border-radius: 2px;
     border: 1px solid wheat;
@@ -41,4 +41,12 @@ form button {
 }
 .contact{
    text-align: center; 
+}
+.socials a {
+    padding: 3px 14px;
+    border: 1px solid lightblue;
+    margin-right: 6px;
+    font-size: 16px;
+    border-radius: 2px;
+    color: #2980b9;
 }
